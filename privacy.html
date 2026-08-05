@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Privacy Policy — FlashBill</title>
+<link rel="stylesheet" href="brand.css" />
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <svg width="22" height="22" viewBox="0 0 24 24"><path d="M13 2L4.5 14H11L9.5 22L19 9.5H12L13 2Z" fill="var(--bolt)" /></svg>
+    <span class="name">FLASHBILL</span>
+    <nav class="pages">
+      <a href="index.html">Home</a>
+      <a href="privacy.html" aria-current="page">Privacy</a>
+      <a href="support.html">Support</a>
+    </nav>
+  </header>
+
+  <h1>Privacy Policy</h1>
+  <p class="subtitle">Effective August 4, 2026 · FlashBill (UAE VAT invoicing app)</p>
+
+  <p>
+    FlashBill is built for small businesses in the UAE to issue FTA-compliant invoices, credit notes,
+    and related documents, and to keep the records those documents require. This page explains what
+    information the app collects, why, and what you can do about it — in plain language, matching
+    exactly what the app actually does, not a generic template.
+  </p>
+
+  <h2>Who this policy covers</h2>
+  <p>
+    FlashBill is developed and operated by Gufran Ajaz Shaikh, an
+    individual developer, not a registered company. If you're a business owner using FlashBill, you
+    are the "data controller" for the customer and transaction data you enter — FlashBill stores it on
+    your behalf so you can run your business and meet UAE recordkeeping requirements.
+  </p>
+
+  <h2>What information FlashBill collects</h2>
+  <ul>
+    <li><strong>Account details</strong> — the email address and password you sign up with, plus your name and phone number if you provide them.</li>
+    <li><strong>Business details you enter</strong> — company name, TRN, address, and contact details entered in Company Setup.</li>
+    <li><strong>Business records you create</strong> — customers, suppliers, items, invoices, credit/debit notes, quotations, delivery notes, purchase orders, GRNs, bills, and payments. This is the core data the app exists to manage.</li>
+  </ul>
+  <p>
+    FlashBill does <strong>not</strong> access your device's camera, location, contacts, or photos, and
+    does not include any advertising or analytics/tracking SDK. Nothing is collected beyond what's
+    listed above.
+  </p>
+
+  <h2>How your data is stored</h2>
+  <p>
+    All account and business data is stored in a managed Postgres database and file storage bucket
+    provided by <a class="link" href="https://supabase.com/privacy" target="_blank" rel="noopener">Supabase</a>,
+    FlashBill's only backend provider. Every business's data is isolated at the database level (Row
+    Level Security) — one business's login can never read another business's records, including staff
+    accounts within the same business only seeing that business's data.
+  </p>
+  <p>
+    Documents you choose to share (via the in-app "Scan QR" or "Copy Link" actions) generate a PDF
+    that's uploaded to storage and made reachable by a unique, hard-to-guess link — it is not publicly
+    listed or searchable, but anyone who has the link can open it, so treat a shared link like you
+    would a printed copy of the document.
+  </p>
+
+  <h2>How your data is used</h2>
+  <p>FlashBill uses the information above only to:</p>
+  <ul>
+    <li>Run the app's core functionality — creating, numbering, storing, and displaying your documents.</li>
+    <li>Authenticate you and keep your account secure.</li>
+    <li>Let the app work offline and sync your changes back once you're reconnected.</li>
+  </ul>
+  <p>FlashBill does not sell, rent, or share your data with advertisers or data brokers. Nothing is used for purposes beyond running the app you're using.</p>
+
+  <h2>Data retention</h2>
+  <p>
+    UAE Federal Tax Authority rules require VAT records to be kept for 5 years, and Corporate Tax
+    records for 7 years — FlashBill keeps issued/voided documents for that reason, and never lets a
+    document number be silently deleted or renumbered (only voided, which keeps the full record
+    intact). Account data is kept for as long as your account is active.
+  </p>
+
+  <h2>Your choices</h2>
+  <ul>
+    <li>You can edit or remove customer, supplier, and item records directly in the app at any time.</li>
+    <li>To request deletion of your account and its data (subject to the legal retention periods above for issued tax documents), contact <a class="link" href="support.html">support</a>.</li>
+    <li>You can stop using the app and sign out at any time from Settings.</li>
+  </ul>
+
+  <h2>Third parties</h2>
+  <p>
+    Supabase (database, authentication, and file storage) is the only third-party service FlashBill's
+    backend relies on. Standard app-store and device-level services (Apple/Google's own OS-level
+    crash reporting, if any, and your device's native share sheet when you send a PDF) are outside
+    FlashBill's control and governed by Apple's and Google's own privacy policies.
+  </p>
+
+  <h2>Children</h2>
+  <p>FlashBill is a business tool and is not directed at, or knowingly used by, children.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>If this policy changes, the updated version will be posted at this same address with a new effective date above.</p>
+
+  <div class="callout">
+    <p>Questions about this policy or your data? Contact <a class="link" href="support.html">FlashBill Support</a>.</p>
+  </div>
+
+  <footer class="bottom">
+    <svg width="12" height="12" viewBox="0 0 24 24"><path d="M13 2L4.5 14H11L9.5 22L19 9.5H12L13 2Z" fill="var(--bolt)" /></svg>
+    FlashBill
+  </footer>
+</div>
+</body>
+</html>

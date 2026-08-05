@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Email confirmed — FlashBill</title>
+<link rel="stylesheet" href="brand.css" />
+<style>
+  body { display: flex; align-items: center; justify-content: center; min-height: 100vh; }
+  .wrap { padding: 32px 16px; max-width: 400px; }
+  header.top { justify-content: center; margin-bottom: 0; }
+  nav.pages { display: none; }
+  .card {
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    box-shadow: var(--card-shadow);
+    padding: 40px 32px 32px;
+    text-align: center;
+    margin-top: 28px;
+  }
+  .mark {
+    width: 56px; height: 56px; margin: 0 auto 22px; border-radius: 50%;
+    background: var(--bolt-bg); border: 1px solid var(--bolt-line);
+    display: flex; align-items: center; justify-content: center;
+  }
+  .kicker { font-size: 11px; font-weight: 700; letter-spacing: 1.6px; text-transform: uppercase; color: var(--bolt); margin: 0 0 10px; }
+  h1 { font-size: 26px; margin: 0 0 12px; }
+  .lede { font-size: 14.5px; line-height: 1.6; color: var(--stone); margin: 0 0 28px; max-width: 30ch; margin-left: auto; margin-right: auto; }
+  .divider { height: 1px; background: var(--hairline); margin: 0 0 24px; }
+  .step { display: flex; align-items: flex-start; gap: 12px; text-align: left; padding: 12px 14px; background: var(--navy-bg); border: 1px solid var(--navy-line); border-radius: 10px; }
+  .step-num { flex: 0 0 auto; width: 22px; height: 22px; border-radius: 50%; background: var(--navy); color: var(--paper); font-size: 11.5px; font-weight: 700; display: flex; align-items: center; justify-content: center; margin-top: 1px; }
+  .step p { margin: 0; font-size: 13.5px; line-height: 1.5; color: var(--ink); }
+  .step p b { font-weight: 700; }
+  .footnote { margin: 24px 0 0; font-size: 11.5px; color: var(--stone); line-height: 1.5; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <svg width="22" height="22" viewBox="0 0 24 24"><path d="M13 2L4.5 14H11L9.5 22L19 9.5H12L13 2Z" fill="var(--bolt)" /></svg>
+    <span class="name">FLASHBILL</span>
+  </header>
+  <div class="card">
+    <div class="mark">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M13 2L4.5 14H11L9.5 22L19 9.5H12L13 2Z" fill="var(--bolt)" /></svg>
+    </div>
+    <p class="kicker">Email confirmed</p>
+    <h1>You're all set.</h1>
+    <p class="lede">Your email address is verified and your FlashBill account is active.</p>
+    <div class="divider"></div>
+    <div class="step">
+      <span class="step-num">1</span>
+      <p>Close this tab and go back to the <b>FlashBill</b> app.</p>
+    </div>
+    <div style="height: 10px"></div>
+    <div class="step">
+      <span class="step-num">2</span>
+      <p>Sign in with the email and password you just created.</p>
+    </div>
+    <p class="footnote">This page is just a receipt — there's nothing else to do here.</p>
+  </div>
+</div>
+</body>
+</html>
